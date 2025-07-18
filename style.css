@@ -1,0 +1,84 @@
+body {
+    font-family: 'Fredoka One';
+    background: #c1a7d2;
+    display: flex;
+    justify-content: center;
+    padding: 40px 40px;
+    color: #c1a7d4
+  }
+  
+  .todo-container {
+    background: white;
+    padding: 20px 20px;
+    border-radius: 60px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #c1a7d6;
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background: #b685de;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f0f0f0;
+    border-radius: 50px;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: #ede5e5;
+  }
+  
+  .delete-btn {
+    background: rgb(188, 120, 223);
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: white;
+  }
+  
+  .input-row {
+    display: flex;
+    align-items: center;     
+    gap: 10px;                
+  }
+  
+  .input-row input, 
+  .input-row select, 
+  .input-row button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  
