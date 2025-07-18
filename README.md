@@ -20,13 +20,13 @@ Flask-cors to let Flask API receive requests from the frontend, even though they
 
 # Structure:
 smart-todo/
-- ├── tod-dolist.html           # Frontend layout
+- ├── tod-dolist.html      # Frontend layout
 - ├── style.css            # Frontend styling
 - ├── script.js            # JavaScript logic 
 - │
 - ├── server.py            # Flask API and ML setup
-- ├── trained_model.pkl            # Trained ML model
-- ├── task_data.csv             # Data used for training
+- ├── trained_model.pkl    # Trained ML model
+- ├── task_data.csv        # Data used for training
 - │
 - └── README.md            # This file
 
