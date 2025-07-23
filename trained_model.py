@@ -10,8 +10,9 @@ dataFrame = pd.read_csv("task_data.csv")
 dataFrame["no_of_words"] = dataFrame["task_name"].apply(lambda x: len(x.split()))
 
 # Priority and task type being converted to numbers
-dataFrame["priority_type"] = LabelEncoder().fit_transform(dataFrame["priority"])
-dataFrame["task_type"] = LabelEncoder().fit_transform(dataFrame["type_of_task"])
+number_convertor = LabelEncoder()
+dataFrame["priority_type"] = number_convertor.fit_transform(dataFrame["priority"])
+dataFrame["task_type"] = number_convertor.fit_transform(dataFrame["type_of_task"])
 
 # Identifying features and target variable
 X = dataFrame[["no_of_words", "priority_type", "task_type"]]
@@ -21,5 +22,6 @@ y = dataFrame.time_required_minutes
 trained_task_model = RandomForestRegressor(random_state=1)
 trained_task_model.fit(X, y)
 
+# Saving the trained model in a pickle file
 joblib.dump(trained_task_model, "final_trained_model.pkl")
 
