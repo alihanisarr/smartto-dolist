@@ -9,12 +9,13 @@ async function addTask() {
     // Get integer values of priority and task type from dropdowns
     const priority = parseInt(document.getElementById("prioritySelect").value);
     const taskType = parseInt(document.getElementById("taskTypeSelect").value);
-  
+
+    // Declaring variable to hold value of predicted time
   let predictedTime;
     
-  try {    // Wrapping code that might give an error
+  try {    // Try to call getPrediction with 'await' as it is an async function
     predictedTime = await getPrediction(taskText, priority, taskType);
-  } catch (error) { # If error occurs then fetch it and give error message
+  } catch (error) {    // If error occurs, 'catch' block runs and app does not crash
     console.error("Prediction error:", error); 
     predictedTime = "Error giving estimated time";
   }
