@@ -7,6 +7,16 @@ This is a smart to-do list that records your tasks and predicts the time require
 - Select the type of task: Working, Studying, or Personal. 
 - Receive the estimated time required to complete each task that has been entered.
 
+# Installation:
+
+
+
+
+# How to use:
+
+
+
+
 # Technologies:
 - HTML/CSS/JavaScript for basic webpage formatting.
 - Python to build the ML model that predicts the time required. 
