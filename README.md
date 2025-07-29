@@ -9,17 +9,17 @@ This is a smart to-do list that records your tasks and predicts the time require
 
 # Installation:
 - Clone the repository (HTTPS Clone): 
-- git clone https://github.com/alihanisarr/smartto-dolist.git
+  git clone https://github.com/alihanisarr/smartto-dolist.git
 
 - Install libraries using pip: 
-pip install flask flask_cors joblib numpy
+  pip install flask flask_cors joblib numpy
 
 - Run the program in the terminal (eg. VS code):
-- cd smartto-dolist
-- python3 server.py
+  cd smartto-dolist
+  python3 server.py
 
 - Open front-end:
-- open tod-dolist.html
+  open tod-dolist.html
 
 - Exit the program:
 In the terminal, press Ctrl + C to end the program
