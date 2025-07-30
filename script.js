@@ -61,7 +61,7 @@ async function addTask() {
       }),
     });
 
-    // 
+    
    if (!res.ok) {
   console.warn("Server responded with error, now giving default value.");
   return "Unknown/0"; 
